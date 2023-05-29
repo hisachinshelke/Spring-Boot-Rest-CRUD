@@ -57,6 +57,8 @@ public class StudentRestController {
         //return ResponseEntity
         return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);  //response error body and status code
     }
+/*
+//if below code is used - it will limited to this controller only. That's why created global exception handler class - StudentRestExceptionHandler
 
     // add another exception handler - to catch any exception (catch all)
     @ExceptionHandler
@@ -70,5 +72,6 @@ public class StudentRestController {
 
         return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
     }
+*/
 
 }
